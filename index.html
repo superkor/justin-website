@@ -22,7 +22,11 @@
             width: 100%;
             height: 150px;
             background-color: tomato;
+            visibility: visible;
             }
+        #goose{
+            visibility: hidden;
+        }
     </style>
     <div id="Title">
         <h1>
@@ -35,12 +39,14 @@
             <button type="button">Start</button>
         </div>
     </div>
-    <!-- <img src="mr_goose.jpg" width="900" height="700" alt="thank mr goose honk" title="Thank you Mr Goose">
-    <div class="test">
-        <p>
-            Test eee
-        </p>
-    </div> -->
+    <div id="goose">
+        <img src="mr_goose.jpg" width="900" height="700" alt="thank mr goose honk" title="Thank you Mr Goose">
+        <div class="test">
+            <p>
+                Test eee
+            </p>
+        </div>
+    </div>
     
 
     <script>
@@ -59,7 +65,8 @@
             if (opacity > 1){
                 clearInterval(interval);
                 interval = null;
-                document.getElementById("Title").remove();
+                document.getElementById("Title").style.visibility = "hidden";
+                document.getElementById("goose").style.visibility = "visible";
             }
         }
         
