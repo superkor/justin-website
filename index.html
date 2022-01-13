@@ -22,10 +22,9 @@
             width: 100%;
             height: 150px;
             background-color: tomato;
-            visibility: visible;
             }
         #goose{
-            visibility: hidden;
+            display: "none";
         }
     </style>
     <div id="Title">
@@ -65,8 +64,8 @@
             if (opacity > 1){
                 clearInterval(interval);
                 interval = null;
-                document.getElementById("Title").style.visibility = "hidden";
-                document.getElementById("goose").style.visibility = "visible";
+                document.getElementById("Title").style.display = "none";
+                document.getElementById("goose").style.display = "block";
             }
         }
         
