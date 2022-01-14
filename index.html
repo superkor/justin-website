@@ -4,44 +4,9 @@
     Justin's Website
 </title>
 <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body onload="onLoad()" id="body" style="opacity: 0;">
-    <style>
-        body{
-            background-color: white;
-        }
-        #Title{
-            position: absolute;
-            align-items: center;
-            text-align: center;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 150px;
-            background-color: tomato;
-            display: block;
-            }
-        #home{
-            display: none;
-        }
-        #titleBar{
-            position: sticky;
-            width:50%;
-            align-items: left;
-            text-align: left;
-            float: left;
-        }
-        #navBar{
-            position: sticky;
-            width: 50%;
-            align-items: right;
-            text-align: right;
-            overflow: hidden;
-        }
-    </style>
+<body onload="fadeInStart()" id="start" style="opacity: 0;">
     <div id="Title">
         <h1>
             Welcome to Justin's Website
@@ -53,13 +18,18 @@
             <button type="button">Start</button>
         </div>
     </div>
-    <div id="home">
+</body>
+<body id="main" style="opacity: 0;">
+    <div id="titleWrapper">
         <div id="titleBar">
             <p>Test</p>
         </div>
         <div id="navBar">
             <p>test</p>
         </div>
+        </div>
+    </div>
+    <div id="home">
         <div id="goose">
             <img src="mr_goose.jpg" width="900" height="700" alt="thank mr goose honk" title="Thank you Mr Goose">
             <div class="test">
@@ -68,32 +38,10 @@
                 </p>
             </div>
         </div>
+        <div style="padding-bottom:2000px"></div>
     </div>
-    
+</body>
 
-    <script>
-        //This script runs when the page finishes loading. This will cause the page to fade in as a transistion.
-        let interval;
-        let opacity = 0 ;
-        function onLoad(){
-            interval = setInterval(function() {
-                    opacity += 0.01;
-                    body.style.opacity = opacity;
-                    //console.log(info.opacity);
-                }, 5);
-        }
-        
-        function stopTransition(){
-            if (opacity > 1){
-                clearInterval(interval);
-                interval = null;
-                document.getElementById("Title").style.display = "none";
-                document.getElementById("home").style.display = "block";
-            }
-        }
-        
-        document.getElementById("clearButton").addEventListener("click", stopTransition);
-        
-    </script>
+    <script src="script.js"></script>
     
 </body>

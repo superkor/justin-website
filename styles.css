@@ -1,0 +1,48 @@
+#Title{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    background-color: tomato;
+    display: block;
+    }
+
+#home{
+    display: none;
+}
+#titleWrapper{
+    display: none;
+    position: sticky;
+    top: 0;
+    width:100%;
+    background-color: aqua;
+    padding: 5px;
+    z-index: 1;
+    left:0;
+}
+#titleBar{
+    width:49.5%;
+    align-items: left;
+    text-align: left;
+    float: left;
+    top: 0;
+    border: 2px solid red;
+    z-index: 2;
+    left:1px;
+}
+#navBar{
+    width: 49.5%;
+    align-items: right;
+    text-align: right;
+    overflow: hidden;
+    top: 0;
+    border: 2px solid green;
+    z-index: 3;
+    right:1px;
+}
