@@ -35,7 +35,6 @@ function stopTransitionHome(){
     if (opacity > 1){
             clearInterval(interval_two);
             interval_two = null;
-            homeFadeIn();
             opacity = 0;
         }
 }
