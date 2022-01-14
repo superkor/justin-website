@@ -1,0 +1,53 @@
+#titleWrapper{
+    display: block;
+    position: sticky;
+    top: 0;
+    width:100%;
+    background-color: aqua;
+    padding: 5px;
+    z-index: 1;
+    left:0;
+}
+#titleBar{
+    width:49.5%;
+    align-items: left;
+    text-align: left;
+    float: left;
+    top: 0;
+    border: 2px solid red;
+    z-index: 2;
+    left:1px;
+}
+#navBar{
+    width: 49.5%;
+    align-items: right;
+    text-align: right;
+    overflow: hidden;
+    top: 0;
+    border: 2px solid green;
+    z-index: 3;
+    right:1px;
+}
+
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px -1px;
+    cursor: pointer;
+    /* Rounds corners */
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+/* Button Hover Animation/Transition */
+.button:hover{
+    background-color: white;
+    color: #4CAF50;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
