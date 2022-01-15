@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <title>
-        Justin's Website
-    </title>
-    <link rel="icon" type="image/png" sizes = "32x32" href="../favicon.png">
-    <link rel="stylesheet" href="AboutMeStyles.css">
+<title>
+    Justin's Website
+</title>
+<link rel="icon" type="image/png" sizes = "32x32" href="../favicon.png">
+<link rel="stylesheet" href="homeStyles.css">
 </head>
 <body onload="fadeInStart()" id="start" style="opacity: 0;">
     <div id="titleWrapper">
@@ -12,15 +12,26 @@
             <p>Justin Chow</p>
         </div>
         <div id="navBar">
+            <button type="button"  class = "button" id = "AboutMeButton" onclick="location.href='../AboutMe/About-Me.html'"> About Me</button>
             <button type="button"  class = "button" id = "ProjectsButton" onclick="location.href='../Projects/Projects.html'"> Projects</button>
             <button type="button"  class = "button" id = "ResumeButton" onclick="location.href='../Resume/Resume.html'"> Resume</button>
             <button type="button"  class = "button" id = "ContactButton" onclick="location.href='../Contact/Contact.html'"> Contact</button>
         </div>
         </div>
     </div>
-    <div>
-        <p>Test</p>
-        <button onclick="location.href='../Home/home.html'">Home</button>
+    <div id="home">
+        <div id="goose">
+            <img src="mr_goose.jpg" width="900" height="700" alt="thank mr goose honk" title="Thank you Mr Goose">
+            <div class="test">
+                <p>
+                    Test eee
+                </p>
+            </div>
+        </div>
+        <div style="padding-bottom:2000px"></div>
     </div>
-    <script src="../fadeIn.js"></script>
+</body>
+
+<script src="../fadeIn.js"></script>
+    
 </body>
