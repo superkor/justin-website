@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
 #home{
     display: block;
 }
@@ -6,10 +11,11 @@
     position: sticky;
     top: 0;
     width:100%;
-    background-color: aqua;
+    background-color: black;
     padding: 5px;
     z-index: 1;
     left:0;
+    color: white;
 }
 #titleBar{
     width:49.5%;
@@ -17,7 +23,6 @@
     text-align: left;
     float: left;
     top: 0;
-    border: 2px solid red;
     z-index: 2;
     left:1px;
 }
@@ -27,7 +32,6 @@
     text-align: right;
     overflow: hidden;
     top: 0;
-    border: 2px solid green;
     z-index: 3;
     right:1px;
 }
