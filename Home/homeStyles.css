@@ -56,6 +56,7 @@ body{
 }
 
 #sideBar{
+    background-color: transparent;
     margin: 0;
     align-items: right;
     position: fixed;
@@ -66,10 +67,16 @@ body{
     bottom: 0;
     right: 0;
     /*gets 50% of screen height*/
-    padding-bottom: 45vh;
+    padding-bottom: 40vh;
+    padding-right: 10px;
+}
+
+#sideBarWrapper{
+    background-color: rgb(163, 57, 57);
 }
 
 .sideBarButton{
+    font-size: medium;  
     background-color: transparent;
     border: none;
     display: inline-block;
