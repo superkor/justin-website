@@ -13,7 +13,7 @@ body{
     width:100%;
     background-color: rgb(37, 66, 146);
     padding: 5px;
-    z-index: 1;
+    z-index: 2;
     left:0;
     color: white;
 }
@@ -52,5 +52,37 @@ body{
 
 .contactButton:hover{
     background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sideBar{
+    margin: 0;
+    align-items: right;
+    position: fixed;
+    display: block;
+    text-align: right;
+    z-index: 1;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    /*gets 50% of screen height*/
+    padding-bottom: 45vh;
+}
+
+.sideBarButton{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    /* Rounds corners */
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.sideBarButton:hover{
+    background-color: rgb(37, 66, 146);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
