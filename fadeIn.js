@@ -13,7 +13,7 @@ function stopTransitionOnLoadStart(){
     if (opacity > 1){
         clearInterval(interval);
         interval = null;
-    }    
+    }
 }
 
 document.getElementById("start").addEventListener("mousemove", stopTransitionOnLoadStart);
