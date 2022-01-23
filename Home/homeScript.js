@@ -30,7 +30,7 @@ function isInViewport(el) {
     }
 }
 
-let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "ExperiencesButton", "ExtraButton", "ResumeButton"]
+let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "ExperiencesButton", "ExtraButton"]
 function clickButton(clicked){
     document.getElementById(clicked).style.backgroundColor = "green";
     for (let x = 0; x < buttonList.length; ++x ){
@@ -45,7 +45,6 @@ const Skills = document.querySelector('#Skills');
 const Projects = document.querySelector('#Projects');
 const Experiences = document.querySelector('#Experiences');
 const ExtraCurriculars = document.querySelector("#ExtraCurriculars");
-const ResumeDownload = document.querySelector("#ResumeDownload");
 
 document.addEventListener('scroll', function () {
     //calls isInViewport function. if true, button is green. false: transparent
@@ -83,14 +82,6 @@ document.addEventListener('scroll', function () {
         console.log("5");
     } else {
         document.getElementById("ExtraButton").style.backgroundColor = "transparent";
-    }
-
-    if (document.body.scrollHeight < window.scrollY+window.innerHeight+20){
-        document.getElementById("ResumeButton").style.backgroundColor = "green";
-        document.getElementById("ExtraButton").style.backgroundColor = "transparent";
-        console.log("6");
-    } else {
-        document.getElementById("ResumeButton").style.backgroundColor = "transparent";
     }
 
 }, {
