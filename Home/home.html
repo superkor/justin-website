@@ -8,8 +8,10 @@
 </head>
 <body onload="fadeInStart()" id="start" style="opacity: 0">
     <div id="titleWrapper">
-        <div id="titleBar">
-            <p>Justin Chow</p>
+        <div id="titleBar" style="padding-left: 5px; padding-top: 7px;">
+            <a href="#home">
+                <button type="button" class="sideBarButton" id = "HomeButton" alt="Justin Chow" style="color:white; font-weight: bold;">Justin Chow</button>
+            </a>
         </div>
         <div id="navBar">
             <a href="JustinChow-Resume.pdf" download>
@@ -36,35 +38,42 @@
     </div>
     <div id="sideBar">
         <div id="sideBarWrapper">
-            <a href="#AboutMe">
+            <a href="#AboutMe" onclick="clickButton('AboutMeButton')">
                 <button type="button" class="sideBarButton" id = "AboutMeButton" alt="About Me">About Me</button>
             </a>
             <br>
-            <a href="#Skills">
+            <a href="#Skills" onclick="clickButton('SkillsButton')">
                 <button type="button" class="sideBarButton" id = "SkillsButton" alt="Skills">Skills</button>
             </a>
             <br>
-            <a href="#Projects">
+            <a href="#Projects" onclick="clickButton('ProjectsButton')">
                 <button type="button" class="sideBarButton" id="ProjectsButton" alt="Projects">Projects</button>
             </a>
             <br>
-            <a href="#Experiences">
+            <a href="#Experiences" onclick="clickButton('ExperiencesButton')">
                 <button type="button" class="sideBarButton" id = "ExperiencesButton" alt="Experiences">Experiences</button>
             </a>
             <br>
-            <a href="#ExtraCurriculars">
+            <a href="#ExtraCurriculars" onclick="clickButton('ExtraButton')">
                 <button type="button" class="sideBarButton" id = "ExtraButton" alt="Extra Curriculars">Extra Curriculars</button>
             </a>
             <br>
-            <a href="#ResumeDownload">
+            <a href="#ResumeDownload" onclick="clickButton('ResumeButton')">
                 <button type="button" class="sideBarButton" id = "ResumeButton" alt="Resume Download">Resume Download</button>
             </a>
         </div> 
     </div>
     <div id="home">
-        <div id="AboutMe" style="padding-bottom: 1000px">
+        <div id="AboutMe" style="padding-top: 10px; padding: 100px;">
             <img src="me.jpg" width="540" height="700" alt="Picture of Me">
-            <p>Hi, I'm Justin!</p> 
+            <div id = "AboutMeText">
+                <h2 style="color:dodgerblue">
+                    About Me
+                </h2>
+                <p style="text-align: left;">
+                    test test test test
+                </p>
+            </div>
         </div>
         <!-- <div id="goose">
             <img src="mr_goose.jpg" width="900" height="700" alt="thank mr goose honk" title="Thank you Mr Goose">
@@ -74,19 +83,19 @@
                 </p>
             </div>
         </div> -->
-        <div id="Skills" style="padding-bottom: 1000px">
+        <div id="Skills" style="padding-top: 1000px;">
             <p>skills?</p>
         </div>
-        <div id="Projects" style="padding-bottom: 1000px">
+        <div id="Projects" style="padding-top: 1000px;">
             <p>Some projects go here</p>
         </div>
-        <div id="Experiences" style="padding-bottom: 1000px">
+        <div id="Experiences" style="padding-top: 1000px;">
             <p>Jobs jobs Jobs jobs Jobs jobs Jobs jobs Jobs jobs Jobs jobs Jobs jobs Jobs jobs</p>
         </div>
-        <div id="ExtraCurriculars" style="padding-bottom: 1000px">
+        <div id="ExtraCurriculars" style="padding-top: 1000px;">
             <p> Some Extra Curriculars go here</p>
         </div>
-        <div id="ResumeDownload" style="padding-bottom: 1000px">
+        <div id="ResumeDownload" style="padding-top: 1000px;">
             <a href="JustinChow-Resume.pdf" download>
                 <button type="button" class = "contactButton resume">
                     Click to view my resume!<br/>

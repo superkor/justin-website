@@ -23,10 +23,20 @@ function isInViewport(el) {
     const rect = el.getBoundingClientRect();
 
     //check the scroll y direction is less than element height and below the top of the element
-    if (-1*(rect.y) < rect.height && rect.y < 0){
+    if (rect.top <=0 && rect.bottom >=0){
         return true;
     } else {
         return false;
+    }
+}
+
+let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "ExperiencesButton", "ExtraButton", "ResumeButton"]
+function clickButton(clicked){
+    document.getElementById(clicked).style.backgroundColor = "green";
+    for (let x = 0; x < buttonList.length; ++x ){
+        if (clicked!=buttonList[x]){
+            document.getElementById(buttonList[x]).style.backgroundColor = "transparent";
+        }
     }
 }
 
@@ -39,38 +49,46 @@ const ResumeDownload = document.querySelector("#ResumeDownload");
 
 document.addEventListener('scroll', function () {
     //calls isInViewport function. if true, button is green. false: transparent
+
     if (isInViewport(AboutMe)){
         document.getElementById("AboutMeButton").style.backgroundColor = "green";
+        console.log("1");
     } else {
         document.getElementById("AboutMeButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Skills)){
         document.getElementById("SkillsButton").style.backgroundColor = "green";
+        console.log("2");
     } else {
         document.getElementById("SkillsButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Projects)){
         document.getElementById("ProjectsButton").style.backgroundColor = "green";
+        console.log("3");
     } else {
         document.getElementById("ProjectsButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Experiences)){
         document.getElementById("ExperiencesButton").style.backgroundColor = "green";
+        console.log("4");
     } else {
         document.getElementById("ExperiencesButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(ExtraCurriculars)){
         document.getElementById("ExtraButton").style.backgroundColor = "green";
+        console.log("5");
     } else {
         document.getElementById("ExtraButton").style.backgroundColor = "transparent";
     }
 
-    if (isInViewport(ResumeDownload)){
+    if (document.body.scrollHeight < window.scrollY+window.innerHeight+20){
         document.getElementById("ResumeButton").style.backgroundColor = "green";
+        document.getElementById("ExtraButton").style.backgroundColor = "transparent";
+        console.log("6");
     } else {
         document.getElementById("ResumeButton").style.backgroundColor = "transparent";
     }
