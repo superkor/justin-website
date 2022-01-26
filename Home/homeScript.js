@@ -51,35 +51,35 @@ document.addEventListener('scroll', function () {
 
     if (isInViewport(AboutMe)){
         document.getElementById("AboutMeButton").style.backgroundColor = "green";
-        console.log("1");
+        //console.log("1");
     } else {
         document.getElementById("AboutMeButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Skills)){
         document.getElementById("SkillsButton").style.backgroundColor = "green";
-        console.log("2");
+        //console.log("2");
     } else {
         document.getElementById("SkillsButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Projects)){
         document.getElementById("ProjectsButton").style.backgroundColor = "green";
-        console.log("3");
+        //console.log("3");
     } else {
         document.getElementById("ProjectsButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Experiences)){
         document.getElementById("ExperiencesButton").style.backgroundColor = "green";
-        console.log("4");
+        //console.log("4");
     } else {
         document.getElementById("ExperiencesButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(ExtraCurriculars)){
         document.getElementById("ExtraButton").style.backgroundColor = "green";
-        console.log("5");
+        //console.log("5");
     } else {
         document.getElementById("ExtraButton").style.backgroundColor = "transparent";
     }
