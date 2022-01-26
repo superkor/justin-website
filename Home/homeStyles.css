@@ -80,6 +80,12 @@ body{
 
 #sideBarWrapper{
     background-color: rgb(163, 57, 57);
+    opacity: 0.3;
+    transition-duration: 0.4s;
+}
+
+#sideBarWrapper:hover{
+    opacity: 1;
 }
 
 .sideBarButton{
@@ -97,5 +103,21 @@ body{
 }
 
 .sideBarButton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.projectCards{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(51,3,0); 
+    padding: 10px; 
+    width: 40%; 
+    margin: 5px;
+    vertical-align: top; 
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.projectCards:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
