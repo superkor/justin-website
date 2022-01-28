@@ -150,7 +150,7 @@ function getExperienceInfo(){
 
         $.each(jobs, function(i, status){
             output += '<div id="Experience"'+i+' class="experienceCards" style="text-align: center;">';
-            output += '<h2><a href="'+status.companyLink+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
+            output += '<h2><a href="'+status.companyLink+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
             output += '<h3>'+status.companyName+'</h3>';
             output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
             output += '<h3 style="font-weight: normal;">'+status.length+'</h3>';
