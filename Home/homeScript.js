@@ -31,7 +31,7 @@ function isInViewport(el) {
     }
 }
 
-let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "ExperiencesButton", "ExtraButton"]
+let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "EducationButton", "ExperiencesButton", "ExtraButton"]
 function clickButton(clicked){
     document.getElementById(clicked).style.backgroundColor = "green";
     for (let x = 0; x < buttonList.length; ++x ){
@@ -44,6 +44,7 @@ function clickButton(clicked){
 const AboutMe = document.querySelector('#AboutMe');
 const Skills = document.querySelector('#Skills');
 const Projects = document.querySelector('#Projects');
+const Education = document.querySelector('#Education');
 const Experiences = document.querySelector('#Experiences');
 const ExtraCurriculars = document.querySelector("#ExtraCurriculars");
 
@@ -69,6 +70,13 @@ document.addEventListener('scroll', function () {
         //console.log("3");
     } else {
         document.getElementById("ProjectsButton").style.backgroundColor = "transparent";
+    }
+
+    if (isInViewport(Education)){
+        document.getElementById("EducationButton").style.backgroundColor = "green";
+        //console.log("3");
+    } else {
+        document.getElementById("EducationButton").style.backgroundColor = "transparent";
     }
 
     if (isInViewport(Experiences)){
