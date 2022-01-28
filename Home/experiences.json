@@ -8,5 +8,17 @@
     "description": ["Conduct Wi-Fi surveys using Ekahau sidekick, Wi-Fi testing, and Wi-Fi client support",
         "Creating/Updating project documentation", "Telecom room improvement/cleanup", "Connecting network jacks for clients",
         "Removing stale network connections", "Registering/modifying IP information for clients"]
+    },
+"2": {
+    "companyName": "Markham Skating Club",
+    "companyLink": "https://www.markhamskatingclub.com/",
+    "jobTitle": "Canskate Coach",
+    "location": "Markham, Ontario, Canada",
+    "length": "Sept 2019 — Present",
+    "description": ["Develop and implement lesson plans to the standard of Skate Canada and the needs of the skaters",
+        "Teach the basics of skating to skaters of various ages",
+        "Coordinate with other coaches for games and events",
+        "Direct and supervise skaters to ensure a safe environment for all skaters and coaches",
+        "Work with parents to better deliver lessons to skaters"]
     }
 }
