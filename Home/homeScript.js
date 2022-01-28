@@ -154,14 +154,14 @@ function getExperienceInfo(){
             output += '<h3>'+status.companyName+'</h3>';
             output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
             output += '<h3 style="font-weight: normal;">'+status.length+'</h3>';
-            output += '<h4>Description:';
+            output += '<h4>Description:<p>';
             for (var x = 0; x < status.description.length; x++){
                 output+=status.description[x];
                 if (x != status.description.length-1){
                     output+='<br>';
                 }
             }
-            output+='</div>';
+            output+='</p></div>';
 
             $('experienceCards').html(output);
         });
