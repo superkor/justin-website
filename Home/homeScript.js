@@ -7,6 +7,7 @@ function fadeInStart(){
             start.style.opacity = opacity;
             //console.log(info.opacity);
         }, 5);
+    getRepoInfo();
 }
 
 function stopTransitionOnLoadStart(){
@@ -87,3 +88,41 @@ document.addEventListener('scroll', function () {
 }, {
     passive: true
 });
+
+function getRepoInfo(){
+    //Create a request varaible and assign a new XMLHttpRequest object
+    var request = new XMLHttpRequest();
+
+    //Open a new connection using GET request on URL
+    request.open('GET', 'https://api.github.com/users/superkor/repos', true);
+
+    request.onload = function(){
+        //Access JSON Data here
+        var data = JSON.parse(this.response);
+        //console.log(data);
+
+        var statusHTML = '';
+
+        $.each(data, function(i, status){
+            //Begin Card
+            statusHTML+='<div id="Project'+i+'"class="projectCards" style="text-align: center;>';
+            //Header for card
+            statusHTML+='<h3">'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.name+'</a></h3>';
+            //Description
+            statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Description: </b>'+status.description+'</p>';
+            //Language
+            statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Language: </b>'+status.language+'</p>';
+            //Last Update (Gets date from API and splits it at T(to get rid of the timestamp and only get date))
+            statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Last Updated: </b>'+status.updated_at.split('T')[0]+'</p>';
+            //End Card
+            statusHTML+='</div>';
+        });
+
+        $('cards').html(statusHTML);
+
+    }
+
+    //Send request
+
+    request.send();
+}
