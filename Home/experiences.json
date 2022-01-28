@@ -1,5 +1,5 @@
 {
-"1": [{
+"1": {
     "companyName": "University of Waterloo",
     "companyLink": "https://uwaterloo.ca/information-systems-technology/",
     "jobTitle": "Network Support Technician",
@@ -8,8 +8,8 @@
     "description": ["Conduct Wi-Fi surveys using Ekahau sidekick, Wi-Fi testing, and Wi-Fi client support",
         "Creating/Updating project documentation", "Telecom room improvement/cleanup", "Connecting network jacks for clients",
         "Removing stale network connections", "Registering/modifying IP information for clients"]
-    }],
-"2": [{
+    },
+"2": {
     "companyName": "Markham Skating Club",
     "companyLink": "https://www.markhamskatingclub.com/",
     "jobTitle": "Canskate Coach",
@@ -20,5 +20,5 @@
         "Coordinate with other coaches for games and events",
         "Direct and supervise skaters to ensure a safe environment for all skaters and coaches",
         "Work with parents to better deliver lessons to skaters"]
-    }]
+    }
 }
