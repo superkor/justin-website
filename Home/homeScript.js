@@ -113,9 +113,9 @@ function getRepoInfo(){
 
         $.each(data, function(i, status){
             //Begin Card
-            statusHTML+='<div id="Project'+i+'"class="projectCards" style="text-align: center;>';
+            statusHTML+='<div id="Project'+i+'"class="projectCards" style="text-align: center;">';
             //Header for card
-            statusHTML+='<h3">'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.name+'</a></h3>';
+            statusHTML+='<h3>'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.name+'</a></h3>';
             //Description
             statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Description: </b>'+status.description+'</p>';
             //Language
@@ -133,12 +133,4 @@ function getRepoInfo(){
     //Send request
 
     request.send();
-    //getExperienceInfo();
 }
-
-/* function getExperienceInfo(){
-    //based on the getRepoInfo()
-    var request = new XMLHttpRequest();
-
-    request.open('GET', '')
-} */
