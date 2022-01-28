@@ -146,10 +146,9 @@ body{
 }
 
 .projectCards{
-    border-style: solid;
+    border-style: none;
     text-align: left;
     border-radius: 10px;
-    border-color: rgb(51,3,0);
     background-color: rgb(172, 170, 170); 
     color: white;
     padding: 10px; 
@@ -179,5 +178,23 @@ body{
 }
 
 .educationCards:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.experienceCards{
+    margin: 5px;
+    text-align: left;
+    background-color: rgb(167, 135, 135);
+    width: 40%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: none;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.experienceCards:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }

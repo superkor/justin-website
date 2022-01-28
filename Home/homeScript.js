@@ -107,7 +107,7 @@ function getRepoInfo(){
     request.onload = function(){
         //Access JSON Data here
         var data = JSON.parse(this.response);
-        console.log(data);
+        //console.log(data);
 
         var statusHTML = '';
 
@@ -133,4 +133,41 @@ function getRepoInfo(){
     //Send request
 
     request.send();
+    getExperienceInfo();
+
+}
+
+function getExperienceInfo(){
+    const info = new XMLHttpRequest();
+    info.overrideMimeType("application/json");
+    info.open("GET", "experiences.json", true);
+
+    info.onload = function(){
+        var jobs = JSON.parse(this.response);
+        console.log(jobs);
+
+        var output = '';
+
+        $.each(data, function(i, status){
+            output += '<div id="Experience'+i+' class="experienceCards" style="text-align: center;">';
+            output += '<h2><a href="'+status.companyLink+'"style=text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
+            output += '<h3>'+status.companyName+'</h3>';
+            output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
+            output += '<h3 style="font-weight: normal;">'+status.length+'</h3>';
+            output += '<h4>Description:';
+            for (var x = 0; x < status.description.length; x++){
+                output+=status.description[x];
+                if (x != status.description.length-1){
+                    output+='<br>';
+                }
+            }
+            output+='</div>';
+
+            $('experienceCards').html(output);
+        });
+    }
+
+    info.send();
+
+
 }

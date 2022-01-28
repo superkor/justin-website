@@ -1,0 +1,12 @@
+{
+"1": {
+    "companyName": "University of Waterloo",
+    "companyLink": "https://uwaterloo.ca/information-systems-technology/",
+    "jobTitle": "Network Support Technician",
+    "location": "Waterloo, Ontario, Canada",
+    "length": "Jan 2022 — Present",
+    "description": ["Conduct Wi-Fi surveys using Ekahau sidekick, Wi-Fi testing, and Wi-Fi client support",
+        "Creating/Updating project documentation", "Telecom room improvement/cleanup", "Connecting network jacks for clients",
+        "Removing stale network connections", "Registering/modifying IP information for clients"]
+    }
+}
