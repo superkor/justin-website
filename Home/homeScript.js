@@ -107,7 +107,7 @@ function getRepoInfo(){
     request.onload = function(){
         //Access JSON Data here
         var data = JSON.parse(this.response);
-        //console.log(data);
+        console.log(data);
 
         var statusHTML = '';
 
@@ -121,7 +121,7 @@ function getRepoInfo(){
             //Language
             statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Language: </b>'+status.language+'</p>';
             //Last Update (Gets date from API and splits it at T(to get rid of the timestamp and only get date))
-            statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Last Updated: </b>'+status.updated_at.split('T')[0]+'</p>';
+            statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Last Updated: </b>'+status.pushed_at.split('T')[0]+'</p>';
             //End Card
             statusHTML+='</div>';
         });
@@ -133,4 +133,12 @@ function getRepoInfo(){
     //Send request
 
     request.send();
+    //getExperienceInfo();
 }
+
+/* function getExperienceInfo(){
+    //based on the getRepoInfo()
+    var request = new XMLHttpRequest();
+
+    request.open('GET', '')
+} */
