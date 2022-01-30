@@ -149,7 +149,7 @@ function getExperienceInfo(){
             var output = '';
 
             $.each(jobs, function(i, status){
-                output += '<div id="Experience"'+i+' class="experienceCards" style="text-align: center;">';
+                output += '<div id="Experience"'+i+' class="cards" style="text-align: center;">';
                 output += '<h2><a href="'+status.companyLink+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
                 output += '<h3>'+status.companyName+'</h3>';
                 output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
@@ -183,7 +183,7 @@ function getEducationInfo(){
         var output = '';
 
         $.each(jobs, function(i, status){
-            output += '<div id="Education"'+i+' class="educationCards" style="text-align: center;">';
+            output += '<div id="Education"'+i+' class="cards" style="text-align: center;">';
             output += '<h2><a href="'+status.link+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.degree+'</a></h2>';
             output += '<h3>'+status.school+'</h3>';
             output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
