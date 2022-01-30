@@ -1,0 +1,20 @@
+{
+    "Bachelors":{
+        "school": "University of Waterloo",
+        "link": "https://uwaterloo.ca/",
+        "date": "Sept 2021 — Present",
+        "location": "Waterloo, Ontario, Canada",
+        "degree": "Candidate for Bachelor's of Applied Science (Computer Engineering)",
+        "info": ["2021 — President's Scholarship Receipient"]
+    },
+    "High School":{
+        "school": "Bur Oak Secondary School",
+        "link": "http://www.yrdsb.ca/schools/buroak.ss/Pages/default.aspx",
+        "date": "Sept 2017 — June 2021",
+        "location": "Markham, Ontario, Canada",
+        "degree": "Ontario Secondary School Diploma",
+        "info": ["2021 - YRDSB Math Excellence Award" ,"2021 - Ontario Scholar", 
+            "2021 - Bur Oak Character Award", "2021 - Bur Oak Award of Merit for Outstanding Achievement in Gr 12 AP Advanced Functions",
+            "2020 - Science Star Award", "2017 - 2021 Honour Roll", "2017 - \"49er's Club\" for completion of all required volunteer hours in Gr 9"]
+    }
+}

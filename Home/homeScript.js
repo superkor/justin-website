@@ -138,36 +138,68 @@ function getRepoInfo(){
 }
 
 function getExperienceInfo(){
-    const info = new XMLHttpRequest();
-    info.overrideMimeType("application/json");
-    info.open("GET", "experiences.json", true);
+        const info = new XMLHttpRequest();
+        info.overrideMimeType("application/json");
+        info.open("GET", "experiences.json", true);
 
-    info.onload = function(){
-        var jobs = JSON.parse(this.response);
-        console.log(jobs);
+        info.onload = function(){
+            var jobs = JSON.parse(this.response);
+            //console.log(jobs);
 
-        var output = '';
+            var output = '';
 
-        $.each(jobs, function(i, status){
-            output += '<div id="Experience"'+i+' class="experienceCards" style="text-align: center;">';
-            output += '<h2><a href="'+status.companyLink+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
-            output += '<h3>'+status.companyName+'</h3>';
-            output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
-            output += '<h3 style="font-weight: normal;">'+status.length+'</h3>';
-            output += '<h4>Description:</h4><p>';
-            for (var x = 0; x < status.description.length; x++){
-                output+=status.description[x];
-                if (x != status.description.length-1){
-                    output+='<br>';
+            $.each(jobs, function(i, status){
+                output += '<div id="Experience"'+i+' class="experienceCards" style="text-align: center;">';
+                output += '<h2><a href="'+status.companyLink+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.jobTitle+'</a></h2>';
+                output += '<h3>'+status.companyName+'</h3>';
+                output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
+                output += '<h3 style="font-weight: normal;">'+status.length+'</h3>';
+                output += '<h4>Description:</h4><p>';
+                for (var x = 0; x < status.description.length; x++){
+                    output+=status.description[x];
+                    if (x != status.description.length-1){
+                        output+='<br>';
+                    }
                 }
-            }
-            output+='</p></div>';
+                output+='</p></div>';
 
-            $('experienceCards').html(output);
-        });
-    }
+                $('experienceCards').html(output);
+            });
+        }
 
-    info.send();
+        info.send();
+        getEducationInfo();
+}
 
+function getEducationInfo(){
+    const info = new XMLHttpRequest();
+        info.overrideMimeType("application/json");
+        info.open("GET", "education.json", true);
 
+        info.onload = function(){
+            var jobs = JSON.parse(this.response);
+            //console.log(jobs);
+
+            var output = '';
+
+            $.each(jobs, function(i, status){
+                output += '<div id="Education"'+i+' class="educationCards" style="text-align: center;">';
+                output += '<h2><a href="'+status.link+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.degree+'</a></h2>';
+                output += '<h3>'+status.school+'</h3>';
+                output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
+                output += '<h3 style="font-weight: normal;">'+status.date+'</h3>';
+                output += '<h4>Description:</h4><p>';
+                for (var x = 0; x < status.info.length; x++){
+                    output+=status.info[x];
+                    if (x != status.info.length-1){
+                        output+='<br>';
+                    }
+                }
+                output+='</p></div>';
+
+                $('educationCards').html(output);
+            });
+        }
+
+        info.send();
 }
