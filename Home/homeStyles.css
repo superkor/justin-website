@@ -98,7 +98,7 @@ body{
 
 .contactButton:hover{
     background-color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
 }
 
 #sideBar{
@@ -142,7 +142,7 @@ body{
 }
 
 .sideBarButton:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
 }
 
 .projectCards{
@@ -160,13 +160,13 @@ body{
 }
 
 .projectCards:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
 }
 
 .educationCards{
     margin: 5px;
     text-align: left;
-    background-color: rgb(167, 135, 135);
+    background-color: rgb(166, 214, 210);
     width: 40%;
     padding: 10px;
     margin-left: auto;
@@ -178,7 +178,7 @@ body{
 }
 
 .educationCards:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
 }
 
 .experienceCards{
@@ -196,5 +196,5 @@ body{
 }
 
 .experienceCards:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
 }
