@@ -175,6 +175,7 @@ body{
     border-style: none;
     border-radius: 10px;
     transition-duration: 0.4s;
+    z-index: 2;
 }
 
 .educationCards:hover{

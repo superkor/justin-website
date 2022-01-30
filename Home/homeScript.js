@@ -173,33 +173,33 @@ function getExperienceInfo(){
 
 function getEducationInfo(){
     const info = new XMLHttpRequest();
-        info.overrideMimeType("application/json");
-        info.open("GET", "education.json", true);
+    info.overrideMimeType("application/json");
+    info.open("GET", "education.json", true);
 
-        info.onload = function(){
-            var jobs = JSON.parse(this.response);
-            //console.log(jobs);
+    info.onload = function(){
+        var jobs = JSON.parse(this.response);
+        //console.log(jobs);
 
-            var output = '';
+        var output = '';
 
-            $.each(jobs, function(i, status){
-                output += '<div id="Education"'+i+' class="educationCards" style="text-align: center;">';
-                output += '<h2><a href="'+status.link+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.degree+'</a></h2>';
-                output += '<h3>'+status.school+'</h3>';
-                output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
-                output += '<h3 style="font-weight: normal;">'+status.date+'</h3>';
-                output += '<h4>Description:</h4><p>';
-                for (var x = 0; x < status.info.length; x++){
-                    output+=status.info[x];
-                    if (x != status.info.length-1){
-                        output+='<br>';
-                    }
+        $.each(jobs, function(i, status){
+            output += '<div id="Education"'+i+' class="educationCards" style="text-align: center;">';
+            output += '<h2><a href="'+status.link+'" style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.degree+'</a></h2>';
+            output += '<h3>'+status.school+'</h3>';
+            output += '<h4 style="font-weight: normal;">'+status.location+'</h4>';
+            output += '<h3 style="font-weight: normal;">'+status.date+'</h3>';
+            output += '<h4>Awards and Honours:</h4><p>';
+            for (var x = 0; x < status.info.length; x++){
+                output+=status.info[x];
+                if (x != status.info.length-1){
+                    output+='<br>';
                 }
-                output+='</p></div>';
+            }
+            output+='</p></div>';
 
-                $('educationCards').html(output);
-            });
-        }
+            $('educationCards').html(output);
+        });
+    }
 
-        info.send();
+    info.send();
 }
