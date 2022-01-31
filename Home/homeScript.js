@@ -31,7 +31,7 @@ function isInViewport(el) {
     }
 }
 
-let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "EducationButton", "ExperiencesButton", "ExtraButton"]
+let buttonList = ["AboutMeButton", "SkillsButton", "ProjectsButton", "EducationButton", "ExperiencesButton", "ExtraButton"];
 function clickButton(clicked){
     document.getElementById(clicked).style.backgroundColor = "green";
     for (let x = 0; x < buttonList.length; ++x ){
@@ -48,9 +48,9 @@ const Education = document.querySelector('#Education');
 const Experiences = document.querySelector('#Experiences');
 const ExtraCurriculars = document.querySelector("#ExtraCurriculars");
 
-document.addEventListener('scroll', function () {
+//event fires when mousewheel is used
+document.addEventListener('wheel', function () {
     //calls isInViewport function. if true, button is green. false: transparent
-
     if (isInViewport(AboutMe)){
         document.getElementById("AboutMeButton").style.backgroundColor = "green";
         //console.log("1");
@@ -92,9 +92,6 @@ document.addEventListener('scroll', function () {
     } else {
         document.getElementById("ExtraButton").style.backgroundColor = "transparent";
     }
-
-}, {
-    passive: true
 });
 
 function getRepoInfo(){
