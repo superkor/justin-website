@@ -226,7 +226,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(187, 152, 86);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -249,6 +249,20 @@ body{
 .contactButtonMobile:hover{
     background-color: white;
     box-shadow: 0 12px 16px 0 rgb(0,0,0,0.24),0 17px 50px 0 rgb(0,0,0,0.19);
+}
+
+.sideBarButtonMobile{
+    background-color: white;
+    font-size: medium; 
+    border: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    /* Rounds corners */
+    border-radius: 12px;
+    transition-duration: 0.4s;
 }
 
 /* For mobile screens */
@@ -275,10 +289,10 @@ body{
         display: none;
     }
     #myPic{
-        width: 80%;
-        height: 90%;
+        width: 260px;
+        height: 350px;
     }
     #mobileSideBar{
-        opacity: 0.7;
+        opacity: 0.6;
     }
 }
