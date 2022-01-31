@@ -216,8 +216,10 @@ function mobileNavBar(x){
 
 function openMobileNavBar(){
     document.getElementById("mobileSideBar").style.width = "250px";
+    openMenu = false;
 }
 
 function closeMobileBar(){
     document.getElementById("mobileSideBar").style.width = "0px";
+    openMenu = false;
 }
