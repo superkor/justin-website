@@ -41,6 +41,40 @@
             </a>
         </div>
     </div>
+    <div id="mobileTitleWrapper">
+        <div id="mobileTitleBar" style="padding-left: 5px; padding-top: 7px;">
+            <div class="mobileNavBar" onclick="mobileNavBar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="mobileSideBar">
+        <a href="JustinChow-Resume.pdf" download>
+            <button type="button" class = "contactButtonMobile resume"> 
+                <img src="resume.png" width="25" height="30" alt="Click me to view my resume!">
+            </button>
+        </a>
+        <br>
+        <a href="https://github.com/superkor">
+            <button type="button" class = "contactButtonMobile github" alt="Click to go to my Github!">
+                <img src="github.png" width="30" height="30">
+            </button>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/chowhjustin/">
+            <button type="button" class = "contactButtonMobile linkedin" alt="Click to go to my LinkedIn!">
+                <img src="linkedin.png" width="30" height="30">
+            </button>
+        </a>
+        <br>
+        <a href="mailto:justinchow03@hotmail.com">
+            <button type="button" class = "contactButtonMobile mail" alt="Click to email me!">
+                <img src="mail.png" width="30" height="30">
+            </button>
+        </a>
+    </div>
     <div id="sideBar">
         <div id="sideBarWrapper">
             <a href="#AboutMe" onclick="clickButton('AboutMeButton')">
@@ -70,7 +104,7 @@
     </div>
     <div id="home">
         <div id="AboutMe" style="padding-bottom: 10px; padding: 100px;">
-            <img src="me.jpg" width="540" height="700" alt="Picture of Me">
+            <img id="myPic" src="me.jpg" width="540px" height="700px" alt="Picture of Me">
             <div id = "AboutMeText">
                 <h1 style="color:dodgerblue">
                     About Me

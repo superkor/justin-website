@@ -200,3 +200,24 @@ function getEducationInfo(){
 
     info.send();
 }
+
+let openMenu = false;
+//performs animation for mobileNavBar
+function mobileNavBar(x){
+    x.classList.toggle("change");
+    if (openMenu){
+        openMenu = false;
+        closeMobileBar();
+    } else {
+        openMenu = true;
+        openMobileNavBar();
+    }
+}
+
+function openMobileNavBar(){
+    document.getElementById("mobileSideBar").style.width = "250px";
+}
+
+function closeMobileBar(){
+    document.getElementById("mobileSideBar").style.width = "0px";
+}
