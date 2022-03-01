@@ -37,6 +37,7 @@ body{
     background-color: rgb(166, 214, 210);
     padding-bottom: 100px; 
     padding-top: 10px;
+    display: block;
 }
 
 #Experiences{
@@ -72,6 +73,7 @@ body{
     z-index: 2;
     left:1px;
 }
+
 #navBar{
     width: 49.5%;
     align-items: right;
@@ -296,8 +298,8 @@ body{
         display: none;
     }
     #myPic{
-        width: 260px;
-        height: 350px;
+        width: 140px;
+        height: 185px;
     }
     #mobileSideBar{
         opacity: 0.6;
