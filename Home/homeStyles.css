@@ -265,6 +265,13 @@ body{
     transition-duration: 0.4s;
 }
 
+#mobileSkills{
+    display: none;
+    background-color: rgb(166, 214, 210);
+    padding-bottom: 100px; 
+    padding-top: 10px;
+}
+
 /* For mobile screens */
 @media screen and (max-width: 40.5em){
     #sideBar{
@@ -294,5 +301,11 @@ body{
     }
     #mobileSideBar{
         opacity: 0.6;
+    }
+    #mobileSkills{
+        display: block;
+    }
+    #Skills{
+        display: none;
     }
 }
