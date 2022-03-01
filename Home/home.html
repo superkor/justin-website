@@ -43,56 +43,52 @@
     </div>
     <div id="mobileTitleWrapper">
         <div id="mobileTitleBar" style="padding-left: 5px; padding-top: 7px;">
-            <div class="mobileNavBar" onclick="mobileNavBar(this)">
+            <div class="mobileNavBar" onclick="mobileNavBar()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
         </div>
         <div id="mobileSideBar">
-            <a href="#AboutMe" onclick=closeMobileBar()>
+            <a href="#AboutMe" onclick="mobileNavBar()">
                 <button type="button" class="sideBarButtonMobile" id = "AboutMeButtonMobile" alt="About Me">About Me</button>
             </a>
             <br>
-            <a href="#Skills" onclick=closeMobileBar()>
-                <button type="button" class="sideBarButtonMobile" id = "SkillsButtonMobile" alt="Skills">Skills</button>
+            <a href="#mobileSkills" onclick="mobileNavBar()">
+                <button type="button" class="sideBarButtonMobile" id = "SkillsButtonMobile" alt="mobileSkills">Skills</button>
             </a>
             <br>
-            <a href="#Projects" onclick=closeMobileBar()>
+            <a href="#Projects" onclick="mobileNavBar()">
                 <button type="button" class="sideBarButtonMobile" id="ProjectsButtonMobile" alt="Projects">Projects</button>
             </a>
             <br>
-            <a href="#Experiences" onclick=closeMobileBar()>
+            <a href="#Experiences" onclick="mobileNavBar()">
                 <button type="button" class="sideBarButtonMobile" id = "ExperiencesButtonMobile" alt="Experiences">Experiences</button>
             </a>
             <br>
-            <a href="#Education" onclick=closeMobileBar()>
+            <a href="#Education" onclick="mobileNavBar()">
                 <button type="button" class="sideBarButtonMobile" id="EducationButtonMobile" alt="Education">Education</button>
             </a>
             <br>
-            <a href="#ExtraCurriculars" onclick=closeMobileBar()>
-                <button type="button" class="sideBarButtonMobile" id = "ExtraButtonMobile" alt="Extra Curriculars">Extra Curriculars</button>
-            </a>
-            <br>
-            <a href="JustinChow-Resume.pdf" download onclick=closeMobileBar()> 
+            <a href="JustinChow-Resume.pdf" download onclick="mobileNavBar()"> 
                 <button type="button" class = "contactButtonMobile resume"> 
                     <img src="resume.png" width="25" height="30" alt="Click me to view my resume!">
                 </button>
             </a>
             <br>
-            <a href="https://github.com/superkor" onclick=closeMobileBar()>
+            <a href="https://github.com/superkor" onclick="mobileNavBar()">
                 <button type="button" class = "contactButtonMobile github" alt="Click to go to my Github!">
                     <img src="github.png" width="30" height="30">
                 </button>
             </a>
             <br>
-            <a href="https://www.linkedin.com/in/chowhjustin/" onclick=closeMobileBar()>
+            <a href="https://www.linkedin.com/in/chowhjustin/" onclick="mobileNavBar()">
                 <button type="button" class = "contactButtonMobile linkedin" alt="Click to go to my LinkedIn!">
                     <img src="linkedin.png" width="30" height="30">
                 </button>
             </a>
             <br>
-            <a href="mailto:justinchow03@hotmail.com" onclick=closeMobileBar()>
+            <a href="mailto:justinchow03@hotmail.com" onclick="mobileNavBar()">
                 <button type="button" class = "contactButtonMobile mail" alt="Click to email me!">
                     <img src="mail.png" width="30" height="30">
                 </button>

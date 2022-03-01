@@ -203,12 +203,14 @@ function getEducationInfo(){
 
 let openMenu = false;
 //performs animation for mobileNavBar
-function mobileNavBar(x){
-    x.classList.toggle("change");
+function mobileNavBar(){
+    //x.classList.toggle("change");
     if (openMenu){
+        document.getElementById("mobileTitleBar").classList.remove("change");
         openMenu = false;
         closeMobileBar();
     } else {
+        document.getElementById("mobileTitleBar").classList.add("change");
         openMenu = true;
         openMobileNavBar();
     }
