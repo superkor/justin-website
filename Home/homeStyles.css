@@ -207,15 +207,6 @@ body{
     transition: 0.4s;
 }
 
-.sub0{
-    display: inline-block; 
-    text-align: center;
-}
-
-.sub1{
-    display: inline-block;
-}
-
 .change .bar1{
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);

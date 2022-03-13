@@ -111,13 +111,8 @@ function getRepoInfo(){
         $.each(data, function(i, status){
             //Begin Card
             statusHTML+='<div id="Project'+i+'" class="projectCards" style="text-align: center;">';
-            //sub0 inner div
-            statusHTML+='<div class="sub0">';
-            statusHTML+='<h3>test</h3></div>';
-            //sub1 inner div
-            statusHTML+='<div class="sub1">';
             //Header for card
-            statusHTML+='<h3>'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.name+'</a></h3>';
+            statusHTML+='<h3>'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+'<img src="'+status.language+'-logo.png" alt="'+status.language+'">'+status.name+'</a></h3>';
             //Description
             statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Description: </b>'+status.description+'</p>';
             //Language
@@ -125,7 +120,7 @@ function getRepoInfo(){
             //Last Update (Gets date from API and splits it at T(to get rid of the timestamp and only get date))
             statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Last Updated: </b>'+status.pushed_at.split('T')[0]+'</p>';
             //End Card
-            statusHTML+='</div></div>';
+            statusHTML+='</div>';
         });
 
         $('cards').html(statusHTML);
