@@ -112,7 +112,10 @@ function getRepoInfo(){
             //Begin Card
             statusHTML+='<div id="Project'+i+'" class="projectCards" style="text-align: center;">';
             //Header for card
-            statusHTML+='<h3>'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+'<img src="'+status.language+'-logo.png" alt="'+status.language+'" style="width:10%; height:10%;vertical-align:middle;"> '+status.name+'</a></h3>';
+            statusHTML+='<h3>'+'<a href='+status.html_url+' style="text-decoration: none; color: #FFD700; font-weight: bold;">'+status.name+'</a></h3>';
+            /* removed the images from the project cards
+             '<img src="'+status.language+'-logo.png" alt="'+status.language+'" style="width:10%; height:10%;vertical-align:middle;"> '+ 
+             */
             //Description
             statusHTML+='<p>'+'<b style="color:rgb(190 51 218);">Description: </b>'+status.description+'</p>';
             //Language
